@@ -1,0 +1,30 @@
+hello.c:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘<’ token
+In file included from hello.c:2:
+/usr/include/string.h:45: error: expected declaration specifiers or ‘...’ before ‘size_t’
+/usr/include/string.h:49: error: expected declaration specifiers or ‘...’ before ‘size_t’
+/usr/include/string.h:58: error: expected declaration specifiers or ‘...’ before ‘size_t’
+/usr/include/string.h:65: error: expected declaration specifiers or ‘...’ before ‘size_t’
+/usr/include/string.h:68: error: expected declaration specifiers or ‘...’ before ‘size_t’
+/usr/include/string.h:95: error: expected declaration specifiers or ‘...’ before ‘size_t’
+/usr/include/string.h:132: error: expected declaration specifiers or ‘...’ before ‘size_t’
+/usr/include/string.h:140: error: expected declaration specifiers or ‘...’ before ‘size_t’
+/usr/include/string.h:146: error: expected declaration specifiers or ‘...’ before ‘size_t’
+/usr/include/string.h:153: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘strxfrm’
+In file included from hello.c:2:
+/usr/include/string.h:168: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘strxfrm_l’
+/usr/include/string.h:183: error: expected declaration specifiers or ‘...’ before ‘size_t’
+/usr/include/string.h:284: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘strcspn’
+/usr/include/string.h:288: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘strspn’
+/usr/include/string.h:399: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘strlen’
+/usr/include/string.h:406: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘strnlen’
+/usr/include/string.h:427: error: expected declaration specifiers or ‘...’ before ‘size_t’
+/usr/include/string.h:451: error: expected declaration specifiers or ‘...’ before ‘size_t’
+/usr/include/string.h:455: error: expected declaration specifiers or ‘...’ before ‘size_t’
+/usr/include/string.h:459: error: expected declaration specifiers or ‘...’ before ‘size_t’
+/usr/include/string.h:462: error: expected declaration specifiers or ‘...’ before ‘size_t’
+/usr/include/string.h:540: error: expected declaration specifiers or ‘...’ before ‘size_t’
+/usr/include/string.h:577: error: expected declaration specifiers or ‘...’ before ‘size_t’
+/usr/include/string.h:580: error: expected declaration specifiers or ‘...’ before ‘size_t’
+hello.c: In function ‘main’:
+hello.c:8: warning: incompatible implicit declaration of built-in function ‘printf’
+hello.c:10: warning: incompatible implicit declaration of built-in function ‘strlen’

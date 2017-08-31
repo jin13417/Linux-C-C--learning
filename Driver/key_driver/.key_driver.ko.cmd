@@ -1,0 +1,1 @@
+cmd_/home/linux/Driver/key_driver/key_driver.ko := arm-cortex_a8-linux-gnueabi-ld -EL -r  -T /home/linux/linux-2.6.35/scripts/module-common.lds --build-id -o /home/linux/Driver/key_driver/key_driver.ko /home/linux/Driver/key_driver/key_driver.o /home/linux/Driver/key_driver/key_driver.mod.o

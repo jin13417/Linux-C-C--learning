@@ -1,0 +1,1 @@
+cmd_/home/linux/Driver/myled/myled_driver.ko := arm-cortex_a8-linux-gnueabi-ld -EL -r  -T /home/linux/linux-2.6.35/scripts/module-common.lds --build-id -o /home/linux/Driver/myled/myled_driver.ko /home/linux/Driver/myled/myled_driver.o /home/linux/Driver/myled/myled_driver.mod.o
