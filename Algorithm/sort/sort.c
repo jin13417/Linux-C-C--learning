@@ -37,7 +37,7 @@ void sort_1(int *s,int size)
 	return;
 }
 
-/*选择排序*.
+/*选择排序*/
 void sort_2(int *s,int size)
 {
 	int i = 0;
@@ -63,6 +63,28 @@ void sort_2(int *s,int size)
 	}
 }
 
+/*插入排序*/
+
+void insort(int *s,int size)
+{
+	int i = 0;
+	int j = 0;
+	int key = 0;
+
+	for(i = 1; i < size; i++)
+	{
+		key = s[i];
+		j = i - 1;
+		while((j >= 0)&&(s[j] > key))
+		{
+			s[j+1] = s[j];
+			j--;
+		}
+		s[j+1] = key;
+	}
+
+	return;
+}
 int main()
 {
 	int i = 0;
@@ -71,7 +93,7 @@ int main()
 
 	len = sizeof(s)/sizeof(int);
     
-	sort_2(s,len);
+	insort(s,len);
 
 	for (i = 0; i < len; i++)
 	{
