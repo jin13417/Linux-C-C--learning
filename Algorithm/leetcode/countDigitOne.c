@@ -15,6 +15,7 @@ int countDigitOne(int n)
 	int cur = 0;
 	int count = 0;
 
+#if 0
 	while((n/digit) != 0)
 	{
 		high = n/(digit*10);
@@ -36,6 +37,17 @@ int countDigitOne(int n)
 		digit *=10;
 
 	}
+#else
+	int a = 1;
+	int b = 1;
+	while(n > 0)
+	{
+		count += (n + 8)/10 *a + ((n%10 == 1)?1:0)*b;
+		b += n%10*a;
+		a *=10;
+		n /=10;
+	}
+#endif
 
 	return count;
 }
