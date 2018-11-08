@@ -10,6 +10,7 @@
 #include <stddef.h>
 #include <execinfo.h>
 #include <signal.h>
+#include <assert.h>
 
 #define myassert(flg)\
 do{\
@@ -42,7 +43,7 @@ void dump(int signo)
 
 	free(strings);
 
-	exit(0);
+	//exit(0);
 }
 
 void trace_3()
@@ -64,9 +65,16 @@ void trace_1()
 
 int main()
 {
+    char c = 0;
+	/*用户捕捉myassert 信号*/
 	signal(SIGUSR1,dump);
 
+	/*捕捉assert 异常信号*/
+	signal(SIGABRT,dump);
+
 	trace_1();
+    c = getchar();
+    assert(0);
 
 	return;
 }
